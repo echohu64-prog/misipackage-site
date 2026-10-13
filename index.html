@@ -3,60 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misipackage | Premium Vape Packaging Solutions</title>
-    <!-- 引入 Tailwind CSS -->
+    <title>Misipackage | Premium Vape Packaging</title>
     </script>
-    <!-- 引入 FontAwesome 图标 -->
     
     
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #050505; color: white; }
+        body { font-family: sans-serif; background-color: #050505; color: white; margin: 0; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://r.jina.ai/i/9e0066063f9643d994e1d5cc21808603');
-            background-size: cover;
-            background-position: center;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://r.jina.ai/i/9e0066063f9643d994e1d5cc21808603');
+            background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; padding: 0 5%;
         }
     </style>
 </head>
-<body class="selection:bg-yellow-500 selection:text-black">
-
-    <!-- 导航栏 -->
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/10">
-        <div class="text-2xl font-black tracking-tighter italic">MISIPACKAGE</div>
-        <div class="hidden md:flex space-x-10 text-sm font-bold uppercase tracking-widest">
-            <a href="#products" class="hover:text-yellow-500 transition-colors">Products</a>
-            <a href="#about" class="hover:text-yellow-500 transition-colors">About</a>
-            <a href="#contact" class="hover:text-yellow-500 transition-colors text-yellow-500 border border-yellow-500 px-4 py-1 rounded">Inquiry</a>
-        </div>
-        <a href="https://wa.me/8613800000000" class="md:hidden text-yellow-500 text-2xl"><i class="fab fa-whatsapp"></i></a>
+<body>
+    <nav style="position: fixed; width: 100%; padding: 20px; background: rgba(0,0,0,0.9); border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; z-index: 100;">
+        <div style="font-size: 24px; font-weight: 900; letter-spacing: -1px;">MISIPACKAGE</div>
+        <a href="#contact" style="background: #eab308; color: black; padding: 8px 20px; border-radius: 5px; font-weight: bold; text-decoration: none;">INQUIRY NOW</a>
     </nav>
-
-    <!-- 主视觉区 -->
-    <section class="hero-bg min-h-screen flex items-center justify-start px-8 md:px-24">
-        <div class="max-w-4xl pt-20">
-            <span class="inline-block bg-yellow-500 text-black px-3 py-1 text-xs font-black uppercase mb-6">B2B Wholesale & Custom</span>
-            <h1 class="text-6xl md:text-9xl font-black leading-[0.9] mb-8 tracking-tighter">
-                UNCOMPROMISED<br><span class="text-yellow-500">QUALITY.</span>
-            </h1>
-            <p class="text-lg md:text-2xl text-gray-400 max-w-2xl mb-12 leading-relaxed">
-                We manufacture high-end child-resistant boxes, premium drawer sets, and luxury paper tubes for the world's leading vape brands. 
-            </p>
-            <div class="flex flex-wrap gap-6">
-                <a href="#contact" class="bg-white text-black px-10 py-5 rounded-sm font-black text-lg hover:bg-yellow-500 transition-all transform hover:-translate-y-1">START YOUR PROJECT</a>
-                <a href="#products" class="border border-white/30 px-10 py-5 rounded-sm font-black text-lg hover:bg-white hover:text-black transition-all">VIEW CATALOG</a>
-            </div>
+    <header class="hero-bg">
+        <div>
+            <h1 style="font-size: 60px; font-weight: 900; line-height: 1; margin-bottom: 20px;">UNCOMPROMISED<br><span style="color: #eab308;">QUALITY.</span></h1>
+            <p style="font-size: 18px; color: #aaa; max-width: 600px; margin-bottom: 30px;">Premium child-resistant boxes, tubes, and retail displays. High-end wholesale solutions for your brand.</p>
+            <a href="#contact" style="background: white; color: black; padding: 15px 40px; border-radius: 2px; font-weight: 900; text-decoration: none;">GET A FREE QUOTE</a>
         </div>
+    </header>
+    <section id="contact" style="padding: 100px 5%; background: #000;">
+        <h2 style="font-size: 40px; font-weight: 900; color: #eab308;">CONTACT US</h2>
+        <p style="color: #666;">WhatsApp: +86 138 0000 0000 | Email: sales@misipackage.com</p>
     </section>
-
-    <!-- 简易页脚 -->
-    <footer class="py-10 px-8 border-t border-white/5 text-center bg-[#050505]">
-        <p class="text-gray-600 text-xs font-bold tracking-widest uppercase">© 2026 MISIPACKAGE LTD. ALL RIGHTS RESERVED.</p>
-    </footer>
-
 </body>
 </html>
