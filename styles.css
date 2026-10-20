@@ -2,3 +2,55 @@
 @media(max-width:1000px){.site-header{padding:0 4%}.nav-links{gap:17px}.hero{padding-left:4%;padding-right:4%;grid-template-columns:49% 51%}.hero-points{gap:12px}.package-tall{right:33%;transform:scale(.88)}.package-open{right:1%;transform:scale(.85) rotate(4deg)}.package-color{right:-7%;transform:scale(.8) rotate(7deg)}.section{padding:80px 5%}.custom-copy{padding:75px 7%}.quote-section{padding:80px 5%;gap:5%}.trust-strip{padding:24px 3%}.trust-strip>div{padding-left:5%}}
 @media(max-width:720px){.announcement{font-size:8px;letter-spacing:.12em}.site-header{height:68px;padding:0 5%}.brand{font-size:19px}.brand-mark{width:29px;height:29px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#10100f;padding:18px 5% 25px;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #333}.nav-links.open{display:flex}.nav-links>a{padding:14px 0;border-bottom:1px solid #292824}.nav-links .nav-quote{padding:14px;margin-top:12px;text-align:center}.hero{display:flex;flex-direction:column;padding:48px 5% 0;min-height:auto}.hero-copy{padding-top:0}.hero h1{font-size:clamp(43px,11vw,62px)}.hero-description{font-size:13px}.hero-points{margin-top:33px;gap:10px;justify-content:space-between}.hero-points>div{grid-template-columns:20px 1fr;column-gap:5px}.point-icon{font-size:18px}.hero-points strong{font-size:8px}.hero-points small{font-size:7px}.hero-art{height:380px;min-height:380px;margin-top:12px;overflow:hidden}.halo{width:280px;height:280px;left:20%;top:8%}.package-tall{height:265px;width:165px;right:37%;top:10%;padding-top:53px;transform:scale(.92) perspective(800px) rotateY(-13deg)}.package-tall::after{height:245px}.package-brand{font-size:14px}.package-label{font-size:6px;margin-top:20px}.package-open{transform:scale(.66) rotate(4deg);transform-origin:top right;right:1%;top:30%}.package-color{transform:scale(.7) rotate(7deg);transform-origin:top right;right:-5%;top:55%}.art-caption{bottom:45px;font-size:6px;left:0}.hero-bottom{font-size:6px;gap:8px;height:34px;letter-spacing:.1em}.trust-strip{grid-template-columns:1fr 1fr;padding:20px 5%;gap:17px}.trust-strip>div{padding-left:0;border:0}.trust-symbol{font-size:23px}.trust-strip strong{font-size:11px}.trust-strip small{font-size:9px}.section{padding:66px 5%}.section-heading{display:block;margin-bottom:30px}.section-heading h2,.why-heading h2{font-size:39px}.section-intro{margin-top:18px;font-size:12px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-visual{height:165px}.product-info{padding:13px 11px 15px;align-items:flex-start}.product-info h3{font-size:12px}.product-info p{font-size:9px}.card-arrow{width:24px;height:24px;font-size:12px}.rigid-box{transform:scale(.75) skewY(-3deg);transform-origin:top left;left:20%;top:28px}.rigid-lid{transform:scale(.75) rotate(-9deg) skewX(-25deg);transform-origin:top left;left:15%;top:22px}.fold-box{transform:scale(.8) perspective(400px) rotateY(-14deg) rotateZ(3deg);transform-origin:top left;left:25%;top:20px}.fold-side{left:70%;top:25px;height:135px}.mag-box{transform:scale(.8) rotate(-7deg);transform-origin:center;left:10%;top:65px}.mag-lid{transform:scale(.8) rotate(-7deg) skewY(-9deg);left:12%;top:35px}.mag-ribbon{top:35px;height:115px}.drawer-outer{transform:scale(.8) rotate(-8deg);left:10%;top:56px}.drawer-inner{transform:scale(.8) rotate(-8deg);left:20%;top:48px}.device-box{transform:scale(.8);transform-origin:top left;left:20%;top:18px}.set-front{transform:scale(.8) rotate(-8deg);transform-origin:top left;left:13%;top:55px}.set-back{transform:scale(.8) rotate(8deg);transform-origin:top left;left:48%;top:25px}.set-sleeve{transform:scale(.75) rotate(10deg);transform-origin:top right;right:5%;top:70px}.custom-section{grid-template-columns:1fr}.custom-art{min-height:360px}.sample-one{transform:scale(.75) rotate(-13deg);transform-origin:top left;left:16%;top:15%}.sample-two{transform:scale(.75) rotate(12deg);transform-origin:top left;left:45%;top:33%}.sample-three{transform:scale(.75) rotate(9deg);transform-origin:top left;left:58%;top:8%}.custom-copy{padding:58px 6% 65px}.custom-copy h2{font-size:45px}.benefit-grid{grid-template-columns:1fr 1fr;margin-top:32px}.benefit-grid article{padding:20px 14px 20px 0;margin-right:14px;border-bottom:1px solid var(--dark-line)}.benefit-grid article:nth-child(2){border-right:0;margin:0}.benefit-grid article:nth-child(3),.benefit-grid article:nth-child(4){border-bottom:0}.benefit-grid h3{font-size:13px;margin-top:17px}.benefit-grid p{font-size:10px}.process-section{padding:65px 5%}.process-steps{grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}.process-steps h3{font-size:14px;margin-top:15px}.process-steps p{font-size:10px}.quote-section{grid-template-columns:1fr;padding:65px 5%;gap:35px}.quote-copy{padding-top:0}.quote-copy h2{font-size:49px}.quote-form{padding:22px 17px}.form-title{display:block}.form-title h3{font-size:21px;margin-bottom:8px}.form-grid{gap:15px 10px}.form-grid input,.form-grid select,.form-grid textarea{font-size:11px;padding:12px 9px}.form-grid label{font-size:9px}.site-footer{grid-template-columns:1fr;padding:30px 5% 18px;gap:15px}.site-footer>p{grid-row:2}.footer-links{grid-column:1;gap:16px}.footer-bottom{grid-column:1;flex-direction:column;gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(18, 140, 126, 0.35);
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 16px 34px rgba(18, 140, 126, 0.45);
+}
+
+.whatsapp-float__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float__icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    left: 16px;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .whatsapp-float__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
