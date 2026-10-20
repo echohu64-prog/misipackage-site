@@ -25,6 +25,20 @@ document.querySelectorAll('[data-product]').forEach(card => {
   });
 });
 
+document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'lead_generation',
+        event_label: link.classList.contains('whatsapp-float')
+          ? 'floating_button'
+          : 'website_button',
+        link_url: link.href
+      });
+    }
+  });
+});
+
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 
