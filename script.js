@@ -13,6 +13,8 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
 
 document.querySelectorAll('[data-product]').forEach(card => {
   card.addEventListener('click', (event) => {
+    if (card.getAttribute('href') !== '#quote') return;
+    
     event.preventDefault();
 
     const product = card.dataset.product || 'Custom Packaging';
