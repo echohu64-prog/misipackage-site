@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/vape-packaging-factory/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wholesale-vape-packaging-quote/",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ]
+}
