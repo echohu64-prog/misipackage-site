@@ -7,7 +7,12 @@
     },
     {
       "source": "/wholesale-vape-packaging-quote/",
-      "destination": "/",
+      "destination": "/#quote",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact/",
+      "destination": "/#quote",
       "statusCode": 301
     }
   ]
