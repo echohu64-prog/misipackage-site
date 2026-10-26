@@ -205,3 +205,132 @@
     padding: 24px;
   }
 }
+
+/* FAQ Section - Misipackage Black & Gold */
+.faq-section {
+  background: #11100e;
+  color: #f5f1e8;
+  padding: 76px 0;
+  border-top: 1px solid rgba(215, 168, 79, 0.18);
+}
+
+.faq-section .section-inner {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.faq-section .eyebrow {
+  color: #d7a84f;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.faq-section h2 {
+  color: #f8f5ee;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.faq-section .faq-intro {
+  color: #c8c1b5;
+  max-width: 760px;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+.faq-section .faq-list {
+  max-width: 900px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.faq-section .faq-list details {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.faq-section .faq-list summary {
+  position: relative;
+  padding: 21px 40px 21px 0;
+  color: #f5f1e8;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-section .faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section .faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d7a84f;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.faq-section .faq-list details[open] summary::after {
+  content: "\2212";
+}
+
+.faq-section .faq-list details p {
+  color: #c8c1b5;
+  font-size: 14px;
+  line-height: 1.85;
+  max-width: 800px;
+  margin: 0;
+  padding: 0 40px 23px 0;
+}
+
+.faq-section .faq-cta {
+  margin-top: 34px;
+}
+
+.faq-section .faq-cta p {
+  color: #e5dfd3;
+  margin-bottom: 16px;
+}
+
+.faq-section .faq-cta .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7ad65;
+  color: #17130d;
+  padding: 14px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: background 0.2s ease;
+}
+
+.faq-section .faq-cta .button:hover {
+  background: #e7c486;
+}
+
+@media (max-width: 640px) {
+  .faq-section {
+    padding: 52px 0;
+  }
+
+  .faq-section .section-inner {
+    width: calc(100% - 36px);
+  }
+
+  .faq-section .faq-list summary {
+    padding: 18px 34px 18px 0;
+    font-size: 14px;
+  }
+
+  .faq-section .faq-list details p {
+    padding-right: 12px;
+  }
+}
