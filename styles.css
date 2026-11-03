@@ -447,3 +447,44 @@
  .hero-refresh .hero-actions{gap:8px}
  .hero-refresh .button{padding:12px 11px;font-size:9px}
 }
+
+
+/* Homepage hero: replace the CSS packaging illustration with the new product photograph */
+.hero-art-photo{
+  position:relative;
+  min-height:540px;
+  align-self:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border:1px solid rgba(215,173,106,.28);
+  background:#10130f;
+  box-shadow:0 22px 55px rgba(0,0,0,.28);
+}
+.hero-art-photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:540px;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:1000px){
+  .hero-art-photo,.hero-art-photo img{min-height:440px;}
+}
+@media(max-width:720px){
+  .hero-art-photo{
+    width:100%;
+    height:auto;
+    min-height:0;
+    margin-top:18px;
+    aspect-ratio:4/3;
+  }
+  .hero-art-photo img{
+    width:100%;
+    height:100%;
+    min-height:0;
+    object-fit:cover;
+  }
+}
