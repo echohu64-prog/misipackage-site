@@ -1304,3 +1304,22 @@
     font-size: 6px;
   }
 }
+/* Customization visual image */
+.custom-visual {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-visual .custom-real-image {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.custom-visual > *:not(.custom-real-image) {
+  display: none !important;
+}
