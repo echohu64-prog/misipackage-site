@@ -1422,19 +1422,3 @@
   }
 }
 
-/* Product grid alignment refinement */
-.products-section .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  justify-content: start;
-  justify-items: stretch;
-  align-items: stretch;
-  width: 100%;
-  margin-left: 0;
-}
-
-.products-section .product-card {
-  width: 100%;
-  min-width: 0;
-  margin: 0;
-}
