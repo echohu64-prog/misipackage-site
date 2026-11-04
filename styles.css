@@ -1420,5 +1420,38 @@
   .product-info p {
     font-size: 10px;
   }
+  
+/* Sliding Drawer Box - Image Showcase */
+.detail-grid-with-images {
+  align-items: stretch;
+}
+
+.detail-card-image {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.detail-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+}
+
+.detail-card-copy {
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .detail-grid-with-images {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card-image img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 }
 
