@@ -1455,3 +1455,63 @@
 
 }
 
+/* ===== FIX: Sliding Drawer Image Grid ===== */
+
+.detail-grid.detail-grid-with-images {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.detail-grid-with-images > .detail-card {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-column: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.detail-grid-with-images .detail-card-image img {
+  display: block !important;
+  position: static !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 260px !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+}
+
+.detail-grid-with-images .detail-card-copy {
+  display: block !important;
+  position: relative !important;
+  padding: 24px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.detail-grid-with-images .detail-card > span,
+.detail-grid-with-images .detail-card > h3,
+.detail-grid-with-images .detail-card > p {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .detail-grid.detail-grid-with-images {
+    grid-template-columns: 1fr !important;
+  }
+
+  .detail-grid-with-images .detail-card-image img {
+    height: 230px !important;
+  }
+}
+
