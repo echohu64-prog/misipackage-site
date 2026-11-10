@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MisiPackage Packaging Insights</title>
+    <link>https://www.misipackage.com/blog/</link>
+    <description>Packaging insights and buying guides for B2B packaging projects.</description>
+    <language>en-us</language>
+    <atom:link href="https://www.misipackage.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Request a Custom Packaging Quote: A B2B Checklist</title>
+      <link>https://www.misipackage.com/blog/custom-packaging-quote-checklist/</link>
+      <guid isPermaLink="true">https://www.misipackage.com/blog/custom-packaging-quote-checklist/</guid>
+      <description>Prepare the dimensions, quantities, artwork, sample requirements and destination details needed for a clear packaging quotation.</description>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sliding Drawer Boxes vs. Magnetic Rigid Boxes: Which Should You Choose?</title>
+      <link>https://www.misipackage.com/blog/sliding-drawer-vs-magnetic-rigid-boxes/</link>
+      <guid isPermaLink="true">https://www.misipackage.com/blog/sliding-drawer-vs-magnetic-rigid-boxes/</guid>
+      <description>Compare sleeve-and-tray and magnetic-lid structures, then review product fit, inserts and presentation using the same brief.</description>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hanging Vape Boxes vs. Windowed Hanging Boxes: Key Differences</title>
+      <link>https://www.misipackage.com/blog/hanging-vs-windowed-vape-boxes/</link>
+      <guid isPermaLink="true">https://www.misipackage.com/blog/hanging-vs-windowed-vape-boxes/</guid>
+      <description>Compare hanging structure, side-window visibility, product retention and retail-fixture requirements before choosing a carton.</description>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
