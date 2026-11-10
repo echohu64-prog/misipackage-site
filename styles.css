@@ -1515,3 +1515,39 @@
   }
 }
 
+
+/* Related packaging links: retain the product pages' existing palette and spacing. */
+.detail-related {
+  padding: 32px 7%;
+  background: #fffdf8;
+}
+.detail-related h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #171613;
+}
+.detail-related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.detail-related-links a {
+  color: #795a30;
+  font-size: 14px;
+  line-height: 1.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.detail-related-links a:hover {
+  color: #171613;
+}
+.detail-related-links a:focus-visible {
+  outline: 2px solid #a07840;
+  outline-offset: 4px;
+}
+@media (max-width: 720px) {
+  .detail-related { padding: 28px 5%; }
+}
