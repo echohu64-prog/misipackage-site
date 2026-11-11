@@ -1479,14 +1479,17 @@
   position: relative !important;
 }
 
-.detail-grid-with-images .detail-card-image img {
+/* Shared 4:3 image boxes for all product customization cards. */
+#custom-options .detail-grid-with-images .detail-card-image img {
   display: block !important;
   position: static !important;
   width: 100% !important;
   max-width: 100% !important;
-  height: 260px !important;
-  aspect-ratio: auto !important;
-  object-fit: cover !important;
+  height: auto !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  object-position: center;
+  background: #f5f3ed;
   margin: 0 !important;
 }
 
@@ -1508,10 +1511,6 @@
 @media (max-width: 768px) {
   .detail-grid.detail-grid-with-images {
     grid-template-columns: 1fr !important;
-  }
-
-  .detail-grid-with-images .detail-card-image img {
-    height: 230px !important;
   }
 }
 
