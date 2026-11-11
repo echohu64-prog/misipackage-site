@@ -1550,3 +1550,35 @@
 @media (max-width: 720px) {
   .detail-related { padding: 28px 5%; }
 }
+
+/* Keep the expanded header navigation comfortable on narrow tablets. */
+@media (min-width: 721px) and (max-width: 900px) {
+  .site-header.has-blog-link .menu-toggle {
+    display: block;
+  }
+  .site-header.has-blog-link .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #10100f;
+    padding: 18px 4% 25px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid #333;
+  }
+  .site-header.has-blog-link .nav-links.open {
+    display: flex;
+  }
+  .site-header.has-blog-link .nav-links > a {
+    padding: 14px 0;
+    border-bottom: 1px solid #292824;
+  }
+  .site-header.has-blog-link .nav-links .nav-quote {
+    padding: 14px;
+    margin-top: 12px;
+    text-align: center;
+  }
+}
