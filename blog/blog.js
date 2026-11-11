@@ -4,17 +4,14 @@
   if (!page || page.dataset.blogInitialized === 'true') return;
   page.dataset.blogInitialized = 'true';
 
-  const menuButton = page.querySelector('.menu-toggle');
+  const menu = page.querySelector('.blog-menu');
+  const menuButton = menu?.querySelector('.menu-toggle');
   const nav = page.querySelector('.nav-links');
   const year = page.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();
 
   function closeMenu() {
-    nav?.classList.remove('open');
-    if (menuButton) {
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.textContent = '☰';
-    }
+    if (menu) menu.open = false;
   }
 
   function ctaPosition(link) {
@@ -25,18 +22,9 @@
     return 'website_button';
   }
 
-  // This is the only click handler: navigation and tracking share delegation.
+  // The native disclosure works without JavaScript; links and tracking share delegation.
   document.addEventListener('click', (event) => {
     if (!(event.target instanceof Element)) return;
-    const toggle = event.target.closest('.menu-toggle');
-    if (toggle && toggle === menuButton) {
-      if (!nav) return;
-      const open = nav.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(open));
-      menuButton.textContent = open ? '×' : '☰';
-      return;
-    }
-
     const link = event.target.closest('a[href]');
     if (!link || !page.contains(link)) return;
     if (nav?.contains(link)) closeMenu();
@@ -64,7 +52,7 @@
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape' || !nav?.classList.contains('open')) return;
+    if (event.key !== 'Escape' || !menu?.open) return;
     closeMenu();
     menuButton?.focus();
   });

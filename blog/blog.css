@@ -8,6 +8,7 @@
 .blog-page button:focus-visible,
 .blog-page summary:focus-visible { outline: 3px solid #a07840; outline-offset: 5px; }
 .blog-page .site-header { gap: 24px; }
+.blog-page .blog-menu { display: none; }
 .blog-page .site-header .nav-links { gap: 24px; }
 .blog-page .nav-links a[aria-current="page"] { color: var(--gold-light); }
 .blog-page .blog-intro { padding: 32px 0 76px; background: #11110f; color: #f7f4ee; border-bottom: 1px solid #39352d; }
@@ -67,14 +68,16 @@
 .blog-page .blog-card-copy time { font-size: 12px; color: #655f54; }
 @media (max-width: 1000px) {
   .blog-page .site-header { height: 68px; }
-  .blog-page .menu-toggle { display: block; }
+  /* Native disclosure controls the sibling nav without changing header height. */
+  .blog-page .blog-menu { display: block; }
+  .blog-page .menu-toggle { display: block; padding: 0 6px; cursor: pointer; list-style: none; }
+  .blog-page .menu-toggle::-webkit-details-marker { display: none; }
+  .blog-page .menu-toggle span::before { content: '☰'; }
+  .blog-page .blog-menu[open] .menu-toggle span::before { content: '×'; }
   .blog-page .site-header .nav-links { display: none; position: absolute; top: 68px; left: 0; right: 0; padding: 18px 5% 25px; gap: 0; background: #10100f; flex-direction: column; align-items: stretch; border-top: 1px solid #333; }
-  .blog-page .site-header .nav-links.open { display: flex; }
+  .blog-page .site-header .blog-menu[open] + .nav-links { display: flex; }
   .blog-page .site-header .nav-links > a { padding: 14px 0; border-bottom: 1px solid #292824; }
   .blog-page .site-header .nav-links .nav-quote { padding: 14px; margin-top: 12px; text-align: center; }
-  .blog-page:not([data-blog-initialized]) .site-header { height: auto; flex-wrap: wrap; padding-block: 20px; }
-  .blog-page:not([data-blog-initialized]) .menu-toggle { display: none; }
-  .blog-page:not([data-blog-initialized]) .site-header .nav-links { display: flex; position: static; flex-basis: 100%; border: 0; }
   .blog-page .blog-intro-grid { grid-template-columns: 1fr; gap: 40px; }
   .blog-page .blog-intro-grid > div { max-width: 740px; }
   .blog-page .blog-brief { max-width: 740px; }
