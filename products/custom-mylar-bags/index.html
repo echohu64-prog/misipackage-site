@@ -142,6 +142,99 @@
         padding: 15px 5%;
       }
     }
+    #mylar-related-packaging .mylar-related-intro {
+      max-width: 880px;
+      margin: 0 0 24px;
+    }
+    #mylar-related-packaging .mylar-related-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-auto-rows: 1fr;
+      gap: 18px;
+    }
+    #mylar-related-packaging .mylar-related-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      border: 1px solid #e3ded4;
+      background: #fffdf8;
+      color: #171613;
+      transition: border-color .18s ease, transform .18s ease;
+    }
+    #mylar-related-packaging .mylar-related-card:hover {
+      border-color: #a07840;
+      transform: translateY(-2px);
+    }
+    #mylar-related-packaging .mylar-related-card:focus-visible {
+      outline: 2px solid #a07840;
+      outline-offset: 4px;
+    }
+    #mylar-related-packaging .mylar-related-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+    #mylar-related-packaging .mylar-related-copy {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      min-width: 0;
+      padding: 18px;
+    }
+    #mylar-related-packaging .mylar-related-copy h3 {
+      min-height: 2.8em;
+      margin: 0 0 12px;
+      font-family: var(--display);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -.02em;
+    }
+    #mylar-related-packaging .mylar-related-copy p {
+      flex: 1;
+      margin: 0 0 18px;
+      color: #716d65;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+    #mylar-related-packaging .mylar-related-link {
+      color: #795a30;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+    #mylar-related-packaging .mylar-related-guide {
+      margin: 24px 0 0;
+      color: #716d65;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    #mylar-related-packaging .mylar-related-guide a {
+      color: #795a30;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    @media (max-width: 1023px) {
+      #mylar-related-packaging .mylar-related-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 599px) {
+      #mylar-related-packaging .mylar-related-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #mylar-related-packaging .mylar-related-card {
+        transition: none;
+      }
+      #mylar-related-packaging .mylar-related-card:hover {
+        transform: none;
+      }
+    }
   </style>
 
   <!-- Google Analytics -->
@@ -319,11 +412,44 @@
       </div>
     </section>
 
-    <section class="detail-related" aria-labelledby="related-products-heading">
+    <section class="detail-related" id="mylar-related-packaging" aria-labelledby="related-products-heading">
       <h2 id="related-products-heading">Related Packaging</h2>
-      <div class="detail-related-links">
-        <p class="detail-intro">Compare <a href="https://www.misipackage.com/products/child-resistant-tube-box/">tube packaging</a> for a rigid format or <a href="https://www.misipackage.com/products/hanging-vape-box/">hanging vape boxes</a> for carton-based retail presentation. For help preparing project details before requesting pricing, read our <a href="/blog/custom-packaging-quote-checklist/">custom packaging quote checklist</a>. Evaluate each format against its own material and application requirements.</p>
+      <p class="detail-intro mylar-related-intro">Explore other packaging formats that can complement custom Mylar bags for retail display, product protection, and brand presentation. Choose the structure that best fits your product, artwork, and merchandising needs.</p>
+      <div class="mylar-related-grid">
+        <a class="mylar-related-card" href="/products/child-resistant-tube-box/" aria-labelledby="related-tube-heading">
+          <img src="/assets/child-resistant-tube-box.jpg" alt="Cylindrical tube box packaging with a branded exterior and product window" width="1024" height="1024" loading="lazy" decoding="async">
+          <div class="mylar-related-copy">
+            <h3 id="related-tube-heading">Child-Resistant Tube Box</h3>
+            <p>A child-resistant packaging format designed for products that require a secure and distinctive presentation.</p>
+            <span class="mylar-related-link">Explore Details <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a class="mylar-related-card" href="/products/hanging-vape-box/" aria-labelledby="related-hanging-heading">
+          <img src="/assets/hanging-vape-box.jpg" alt="Printed hanging vape carton with a retail peg-display tab" width="1024" height="1024" loading="lazy" decoding="async">
+          <div class="mylar-related-copy">
+            <h3 id="related-hanging-heading">Hanging Vape Box</h3>
+            <p>A retail-ready packaging option designed for convenient peg display and clear shelf presentation.</p>
+            <span class="mylar-related-link">Explore Details <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a class="mylar-related-card" href="/products/windowed-hanging-vape-box/" aria-labelledby="related-windowed-heading">
+          <img src="/assets/windowed-hanging-vape-box.jpg" alt="Windowed hanging vape carton showing the product through a side opening" width="1024" height="1024" loading="lazy" decoding="async">
+          <div class="mylar-related-copy">
+            <h3 id="related-windowed-heading">Windowed Hanging Vape Box</h3>
+            <p>Combines hanging display convenience with a product window to showcase the item inside.</p>
+            <span class="mylar-related-link">Explore Details <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a class="mylar-related-card" href="/products/cardboard-display-box/" aria-labelledby="related-display-heading">
+          <img src="/assets/cardboard-display-box.jpg" alt="Cardboard countertop display holding multiple individually boxed products" width="1024" height="1024" loading="lazy" decoding="async">
+          <div class="mylar-related-copy">
+            <h3 id="related-display-heading">Cardboard Display Box</h3>
+            <p>A practical countertop display solution for organizing and presenting multiple products in retail environments.</p>
+            <span class="mylar-related-link">Explore Details <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
       </div>
+      <p class="mylar-related-guide">For help preparing project details before requesting pricing, read our <a href="/blog/custom-packaging-quote-checklist/">custom packaging quote checklist</a>.</p>
     </section>
 
     <section class="detail-cta" id="inquiry" aria-labelledby="quotation-heading">
