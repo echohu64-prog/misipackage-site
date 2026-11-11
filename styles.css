@@ -1479,14 +1479,17 @@
   position: relative !important;
 }
 
-.detail-grid-with-images .detail-card-image img {
+/* Shared 4:3 image boxes for all product customization cards. */
+#custom-options .detail-grid-with-images .detail-card-image img {
   display: block !important;
   position: static !important;
   width: 100% !important;
   max-width: 100% !important;
-  height: 260px !important;
-  aspect-ratio: auto !important;
-  object-fit: cover !important;
+  height: auto !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  object-position: center;
+  background: #f5f3ed;
   margin: 0 !important;
 }
 
@@ -1508,10 +1511,6 @@
 @media (max-width: 768px) {
   .detail-grid.detail-grid-with-images {
     grid-template-columns: 1fr !important;
-  }
-
-  .detail-grid-with-images .detail-card-image img {
-    height: 230px !important;
   }
 }
 
@@ -1550,4 +1549,41 @@
 }
 @media (max-width: 720px) {
   .detail-related { padding: 28px 5%; }
+}
+
+/* Keep the expanded header navigation comfortable on narrow tablets. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .site-header.has-blog-link .nav-links {
+    gap: 17px;
+  }
+}
+@media (min-width: 721px) and (max-width: 900px) {
+  .site-header.has-blog-link .menu-toggle {
+    display: block;
+  }
+  .site-header.has-blog-link .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #10100f;
+    padding: 18px 4% 25px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid #333;
+  }
+  .site-header.has-blog-link .nav-links.open {
+    display: flex;
+  }
+  .site-header.has-blog-link .nav-links > a {
+    padding: 14px 0;
+    border-bottom: 1px solid #292824;
+  }
+  .site-header.has-blog-link .nav-links .nav-quote {
+    padding: 14px;
+    margin-top: 12px;
+    text-align: center;
+  }
 }
