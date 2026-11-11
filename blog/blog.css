@@ -102,3 +102,10 @@
   .blog-page .blog-featured-content,
   .blog-page .blog-article-grid { grid-template-columns: 1fr; }
 }
+/* DM Sans metadata fits on one row from 377px; preserve its two-row layout below. */
+@media (max-width: 376px) {
+  .blog-page.blog-article-page .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
