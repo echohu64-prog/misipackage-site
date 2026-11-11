@@ -1552,6 +1552,11 @@
 }
 
 /* Keep the expanded header navigation comfortable on narrow tablets. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .site-header.has-blog-link .nav-links {
+    gap: 17px;
+  }
+}
 @media (min-width: 721px) and (max-width: 900px) {
   .site-header.has-blog-link .menu-toggle {
     display: block;
