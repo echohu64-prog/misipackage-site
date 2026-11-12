@@ -102,3 +102,80 @@
   .blog-page .blog-featured-content,
   .blog-page .blog-article-grid { grid-template-columns: 1fr; }
 }
+/* DM Sans metadata fits on one row from 377px; preserve its two-row layout below. */
+@media (max-width: 376px) {
+  .blog-page.blog-article-page .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Article-only local fallbacks, calibrated against DM Sans v17 / Manrope v23.
+   Width fits use the article text and rendered line breaks. Vertical overrides
+   are the target ascent/descent divided by units-per-em and size-adjust.
+   Small text has a separate width fit to retain breadcrumb and metadata wraps.
+   Matching Latin ranges keep other glyphs on their existing system fallback. */
+@font-face {
+  font-family: "Misi DM Sans Fallback";
+  src: local("Arial"), local("ArialMT"), local("Liberation Sans");
+  font-style: normal;
+  font-weight: 400 500;
+  size-adjust: 104.6%;
+  ascent-override: 94.8375%;
+  descent-override: 29.6367%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Misi DM Sans Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold");
+  font-style: normal;
+  font-weight: 600 700;
+  size-adjust: 102.3776%;
+  ascent-override: 96.8962%;
+  descent-override: 30.2801%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Misi DM Sans Small Fallback";
+  src: local("Arial"), local("ArialMT"), local("Liberation Sans");
+  font-style: normal;
+  font-weight: 400;
+  size-adjust: 100.9%;
+  ascent-override: 98.3152%;
+  descent-override: 30.7235%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Misi Manrope Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold");
+  font-style: normal;
+  font-weight: 600;
+  size-adjust: 96.9874%;
+  ascent-override: 109.9112%;
+  descent-override: 30.9319%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Misi Manrope Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold");
+  font-style: normal;
+  font-weight: 700;
+  size-adjust: 101.1244%;
+  ascent-override: 105.4147%;
+  descent-override: 29.6664%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.blog-page.blog-article-page main {
+  --font: "DM Sans", "Misi DM Sans Fallback", sans-serif;
+  --display: "Manrope", "Misi Manrope Fallback", sans-serif;
+  font-family: var(--font);
+}
+.blog-page.blog-article-page main .article-meta,
+.blog-page.blog-article-page main .article-breadcrumb {
+  font-family: "DM Sans", "Misi DM Sans Small Fallback", sans-serif;
+}
