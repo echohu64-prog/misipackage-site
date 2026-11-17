@@ -14,7 +14,7 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
 
 const productNames = {
   'sliding-drawer-box': 'Sliding Drawer Box',
-  'child-resistant-tube-box': 'Child-Resistant Tube Box',
+  'child-resistant-tube-box': 'Custom Vape Tube Packaging with Button Lock',
   'magnetic-rigid-gift-box': 'Magnetic Rigid Gift Box',
   'hanging-vape-box': 'Hanging Vape Box',
   'windowed-hanging-vape-box': 'Windowed Hanging Vape Box',
