@@ -62,7 +62,7 @@
 
 .whatsapp-float {
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   width: 64px;
   height: 64px;
@@ -99,10 +99,10 @@
 
 @media (max-width: 768px) {
   .whatsapp-float {
-    left: 16px;
-    bottom: 16px;
-    width: 58px;
-    height: 58px;
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: 52px;
+    height: 52px;
   }
 
   .whatsapp-float__icon svg {

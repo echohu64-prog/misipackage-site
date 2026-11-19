@@ -15,6 +15,7 @@
   }
 
   function ctaPosition(link) {
+    if (link.classList.contains('whatsapp-float')) return 'floating_button';
     if (link.closest('.site-header')) return 'header_navigation';
     if (link.closest('.site-footer')) return 'footer';
     if (link.closest('.blog-quote')) return 'bottom_cta';
@@ -42,7 +43,7 @@
     const pageType = page.dataset.pageType === 'blog_article' ? 'blog_article' : 'blog_index';
     window.gtag('event', 'whatsapp_click', {
       event_category: 'lead_generation',
-      event_label: 'website_button',
+      event_label: link.classList.contains('whatsapp-float') ? 'floating_button' : 'website_button',
       page_type: pageType,
       product_name: 'not_applicable',
       cta_position: ctaPosition(link),
